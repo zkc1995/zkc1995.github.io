@@ -45,7 +45,7 @@
             <span class="space"/>
             <span class="comments">*/</span><br />
             Boy name = <span class="keyword">Mr</span> <span class="boyName"></span><br />
-            Girl name = <span class="keyword">Mrs</span> <span class="girlName"></span><br />
+            Girl name = <span class="keyword">Miss</span> <span class="girlName"></span><br />
             <span class="comments">// Fall in love river. </span><br />
             The boy love the girl;<br />
             <span class="comments">// They love each other.</span><br />
@@ -54,9 +54,12 @@
             The boy can not be separated the girl;<br />
             <span class="comments">// At the same time.</span><br />
             The girl can not be separated the boy;<br />
-            <span class="placeholder"/><span class="comments">// Whether it is right now</span><br />
-            <span class="placeholder"/><span class="comments">// Still in the distant future.</span><br />
-            <span class="placeholder"/>The boy has but one dream;<br />
+            <!-- <span class="placeholder"/> -->
+            <span class="comments">// Whether it is right now</span><br />
+            <!-- <span class="placeholder"/> -->
+            <span class="comments">// Still in the distant future.</span><br />
+            <!-- <span class="placeholder"/> -->
+            The boy has but one dream;<br />
             <span class="comments">// The boy wants the girl could well have been happy.</span><br />
             <br>
             <br>
@@ -92,7 +95,9 @@
     var boyName = getQueryStringFn("boyName");
     var girlName = getQueryStringFn("girlName");
     var meetDate = getQueryStringFn("meetDate");
+    var toName = getQueryStringFn("toName");
     var word = getQueryStringFn("word") != '' ? getQueryStringFn("word") : '爱你直到永永远远。';
+    document.getElementsByTagName("title")[0].innerText = `To ${toName}`
     var signatureName = getQueryStringFn("signatureName") != '' ? getQueryStringFn("signatureName") : getQueryStringFn("boyName");
     var meetDateArr = meetDate.split("-");
     $('.boyName').text(boyName);
