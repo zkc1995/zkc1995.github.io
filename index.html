@@ -97,7 +97,7 @@
     var meetDate = getQueryStringFn("meetDate");
     var toName = getQueryStringFn("toName");
     var word = getQueryStringFn("word") != '' ? getQueryStringFn("word") : '爱你直到永永远远。';
-    document.getElementsByTagName("title")[0].innerText = `To ${toName}`
+    document.title = `To ${toName}`
     var signatureName = getQueryStringFn("signatureName") != '' ? getQueryStringFn("signatureName") : getQueryStringFn("boyName");
     var meetDateArr = meetDate.split("-");
     $('.boyName').text(boyName);
